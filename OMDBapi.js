@@ -10,7 +10,7 @@ module.exports = {
     let queryURL = `http://www.omdbapi.com/?t=${movie}&plot=short&apikey=trilogy`;
     axios
       .get(queryURL)
-      .then(() => {
+      .then(response => {
         console.log(`
             LIRI has searched the OMDB api and has the following to report:
 

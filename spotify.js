@@ -23,7 +23,7 @@ module.exports = {
         query: song
       }) //then function executes once promise is fulfilled
       .then(response => {
-        //console.log(response)
+        // console.log(response.tracks.items[0]);
 
         //using template literal to easily format results from json
         console.log(`
@@ -34,10 +34,10 @@ module.exports = {
             Spotify information about ${song}
             =================================
 
-
+            Track Name: ${response.tracks.items[0].name}
             Artist: ${response.tracks.items[0].album.artists[0].name}
             Album: ${response.tracks.items[0].album.name}
-            Like to Spotify profile: ${
+            Like to song's profile: ${
               response.tracks.items[0].external_urls.spotify
             }
             `);
