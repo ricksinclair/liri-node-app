@@ -1,7 +1,7 @@
-const spotify = require("spotify.js");
-const movies = require("OMDBapi.js");
-const concerts = require("BITapi.js");
-const random = require("random.js");
+const spotify = require("./spotify.js");
+const movies = require("./OMDBapi.js");
+const concerts = require("./BITapi.js");
+const random = require("./random.js");
 const command = process.argv[2];
 
 command === "spotify-this-song"

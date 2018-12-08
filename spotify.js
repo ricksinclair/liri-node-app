@@ -1,5 +1,5 @@
 //add secret keys using env
-const spotKey = require("keys.js");
+const spotifyKey = require("./keys.js");
 //import spotify node module
 let Spotify = require("node-spotify-api");
 
