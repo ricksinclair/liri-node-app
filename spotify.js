@@ -21,7 +21,7 @@ module.exports = {
       .search({
         type: "track",
         query: song
-      })
+      }) //then function executes once promise is fulfilled
       .then(response => {
         //console.log(response)
 
@@ -41,7 +41,7 @@ module.exports = {
               response.tracks.items[0].external_urls.spotify
             }
             `);
-      })
+      }) //will take any errors generated and log them to the console using promise catch
       .catch(err => console.log(err));
   }
 };
